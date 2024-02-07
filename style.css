@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+
+    height: 100vh;
+    font-weight: auto;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    height: 12.2rem;
+    padding: 0 7.2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.27rem;
+
+    font-size: 2rem;
+    line-height: 2.17rem;
+    gap: 3rem;
+}
+
+header nav a {
+    color: #c4c4cc;
+    font-weight: 400;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: white;
+}
+
+.active {
+    color: white;
+    font-weight: 700;
+}
+
+/* configurando imagem de fundo*/
+body {
+    background-image: url(./images/mountains-universe-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+}
+
+body.universe {
+    background-image: url(./images/mountains-universe02.png);
+}
+
+body.exploration {
+    background-image: url(./images/mountains-universe-3.png);
+}
+
+body.error404 {
+    background-image: url(./assents/bg/bg-404.gif);
+}
+
+/* configurando o main */
+
+main .home {
+    margin-top: 13%;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6rem;
+}
+
+main .home button {
+    background-color: rgba(10, 10, 10, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 0.6rem;
+    width: 19.5rem;
+    height: 4.8rem;
+
+    transition: all 0.6s;
+}
+
+main .home button.buttonExploration {
+    margin-top: 2.4rem;
+}
+
+main .home button:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+main .home button a,
+main .error404 button a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+main .universe,
+main .exploration {
+    /* border: 1px solid red; */
+
+    width: 64.8rem;
+    margin-top: 7rem;
+    margin-left: 10.2rem;
+}
+
+p {
+    color: #e1e1e6;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 160%;
+}
+
+/* configurando página de erro */
+
+main .error404 {
+background-color: white;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+
+display: flex;
+justify-content: center;
+}
+
+main .error404 img{
+  width: 70rem;
+  height: 60rem;
+  margin-top: 7%;
+}
+
+main .error404 .text-error{
+  text-align: center;
+  padding-top: 18%;
+
+  width: 44rem;
+}
+
+main .error404 h1 {
+  color:black;
+  text-shadow: rgb(244, 7, 7) -6px 0, cyan 6px 0;
+
+  margin-bottom: 2rem;
+}
+main .error404 h3{
+  color: rgba(85, 80, 80, 0.641);
+  font-weight: 400;
+
+  margin-bottom: 4rem;
+}
+
+main .error404 button {
+background-color: rgba(10, 10, 10, 0);
+border: 3px solid rgb(1, 1, 1);
+border-radius: .6rem;
+width: 20.5rem;
+height: 4.8rem;
+
+transition: all 0.6s; 
+}
+
+main .error404 button:hover {
+  transform: scale(1.1);
+  /* background-color: rgb(221, 166, 38); */
+  /* border: none; */
+  cursor:pointer;
+}
+
+main .error404 button a {
+  color:rgb(2, 3, 6)
+}
+
+main .error404 button:hover a {
+
+font-weight: 800;
+}
